@@ -1,0 +1,197 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    border-bottom: white solid 1px;
+}
+
+#logo {
+    position: relative;
+    left: 5%;
+}
+
+#header_container {
+    /* position: relative; */
+    height: 700px;
+    background: url("../images/cover4.jpg") no-repeat;
+    background-size: cover;
+    color: white;
+    /* filter: grayscale(15%); */
+}
+
+#sign {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#sign > a {
+    font-size: 1.4em;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #405E63;
+    height: 25%;
+    padding: 5px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#signIn {
+    display: none;
+    color: black;
+    background-color:#F8F8F6;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 350px;
+    height: 380px;
+    margin-left: -170px;
+    margin-top: -190px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 11px;
+}
+
+#signIn > form {
+    margin-top: 15px;
+    color: black;
+}
+
+#wrong_pass {
+    color: red;
+}
+
+#signIn > h2 {
+    margin: 18px;
+}
+
+.input {
+    height: 30px;
+    width: 100%;
+}
+
+input {
+    margin-bottom: 20px;
+}
+
+#submit {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: tomato;
+    border: none;
+    cursor: pointer;
+}
+
+#user_account {
+    display: flex;
+    margin-right: 35px;
+    align-items: center;
+}
+
+#user_account > h3 {
+    font-size: 1.4em;
+    cursor: pointer;
+}
+
+#user_account:hover #account_management {
+    display: flex;
+    position: absolute;
+    top: 80px;
+    right: 25px;
+}
+
+#account_management {
+    z-index: 101;
+    flex-direction: column;
+    display: none;
+    justify-content: space-around;
+    border: black 1px solid;
+    background-color: white;
+    text-align: left;
+    width: 200px;
+    height: 250px;
+    border-radius: 2%;
+}
+
+#account_management > a {
+    padding: 10px;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: black;
+}
+
+#account_management > a:hover {
+    background-color: rgba(137, 193, 219, 0.582);
+}
+
+nav > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+nav > ul > li {
+    padding: 10px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.6em;
+    font-family: 'Indie Flower', cursive;
+    font-weight: bold;
+}
+
+nav > ul > li:hover a {
+    color: tomato;
+    border-bottom: 1px solid tomato;
+    box-shadow: 0px 2px 0px tomato;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #405E63;
+}
+
+#banner_after_header {
+    width: 100%;
+    height: 300px;
+    background-color: #405E63;
+}
+
+#banner_after_header > h1 {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    font-size: 5em;
+}
+
+#banner_after_header > p {
+    color: white;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: -8px 15px 5px 15px;
+}
+
+article {
+    background: url(../images/cover.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
